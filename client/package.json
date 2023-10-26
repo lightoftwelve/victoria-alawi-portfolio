@@ -7,7 +7,7 @@
     "dev": "vite",
     "start": "vite",
     "build": "vite build && npm run build:lambda",
-    "build:lambda": "netlify-lambda build netlify/functions",
+    "build:lambda": "netlify-lambda build -c ../../netlify.toml netlify/functions",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
