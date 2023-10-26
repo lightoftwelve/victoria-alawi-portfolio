@@ -1,4 +1,11 @@
 const AWS = require("aws-sdk");
+
+AWS.config.update({
+  accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
+  region: process.env.AWS_REGION,
+});
+
 const s3 = new AWS.S3();
 
 exports.handler = async (event, context) => {
@@ -25,6 +32,9 @@ exports.handler = async (event, context) => {
     };
   } catch (error) {
     console.error(error);
+    if (error.code === "NoSuchKey") {
+      return { statusCode: 404, body: "Image not found" };
+    }
     return { statusCode: 500, body: "Error retrieving the image" };
   }
 };
