@@ -1,0 +1,204 @@
+.aboutPageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--white);
+  font-family: "Khand", sans-serif;
+}
+
+/* ---------------------------------------------------------
+                   Circle Animation
+  --------------------------------------------------------- */
+.square {
+  position: relative;
+  top: -150px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square span {
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--dark);
+  opacity: 0.5;
+}
+
+.square span:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animateSquare 6s linear infinite;
+}
+
+.square span:nth-child(2) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animateSquare 4s linear infinite;
+}
+
+.square span:nth-child(3) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animateSquare2 10s linear infinite;
+}
+
+@keyframes animateSquare {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animateSquare2 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 40px;
+  color: var(--white);
+}
+
+.icon .imgBx {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: 0 0 0 4px #fff;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.icon .imgBx.active {
+  box-shadow: 0 0 0 4px var(--white), 0 0 0 10px var(--dark),
+    0 0 0 12px var(--white);
+  opacity: 1;
+  scale: 1.2;
+  margin: 0 10px;
+}
+
+.icon .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentBx {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.contentBx.active {
+  transform: scale(1);
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.contentBx .card {
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.contentBx .card .imgBx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--dark);
+  overflow: hidden;
+}
+
+.contentBx .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentBx .card .textBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentBx .card .textBx h2 {
+  position: relative;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.contentBx .card .textBx h2 b {
+  font-size: 0.65em;
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.contentBx .card .textBx .sci {
+  position: relative;
+  display: flex;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.contentBx .card .textBx .sci li {
+  list-style: none;
+}
+
+.contentBx .card .textBx .sci li a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  background: var(--black);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.contentBx .card .textBx .sci li a:hover {
+  background: var(--dark);
+}
