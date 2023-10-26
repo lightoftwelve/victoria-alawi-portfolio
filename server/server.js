@@ -10,7 +10,7 @@ const AWS = require("aws-sdk");
 AWS.config.update({
   accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
-  region: process.env.AWS_REGION,
+  region: process.env.MY_AWS_REGION,
 });
 
 const PORT = process.env.PORT || 3001;
@@ -34,7 +34,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Routes
-app.use("/api", apiRoutes);
+// app.use("/api", apiRoutes);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/dist")));

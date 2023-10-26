@@ -7,14 +7,19 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build && npm run build:lambda"
+    "build": "cd client && npm run build && npm run build:lambda",
+    "develops": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\""
   },
   "author": "Victoria Alawi | Light of Twelve | www.lightoftwelve.com",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.3.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.1481.0",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.7"
+  },
   "keywords": [],
   "description": ""
 }

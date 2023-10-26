@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+require("dotenv").config({ path: "../../env" });
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") {

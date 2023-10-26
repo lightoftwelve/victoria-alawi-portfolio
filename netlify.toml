@@ -1,11 +1,11 @@
 [build]
   command = "npm run build"
-  functions = "lambda"
+  functions = "netlify/functions"
   publish = "client/dist"
 
 [dev]
   command = "npm run develop"
   publish = "client/dist"
-  targetPort = 3000
   framework = "#custom"
+  targetPort = 3000
   port = 8888

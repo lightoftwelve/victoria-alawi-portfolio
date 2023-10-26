@@ -49,7 +49,8 @@ export default function ResumeSection() {
                   onMouseOver={() => handleMouseOver(`content${index + 1}`)}
                 >
                   <img
-                    src={`/api/photos/images/${item.image}`}
+                    src={`/.netlify/functions/images/${item.image}`}
+                    // src={`/api/photos/images/${item.image}`}
                     alt={item.alt}
                   ></img>
                 </div>

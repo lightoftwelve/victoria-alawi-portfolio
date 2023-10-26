@@ -38,11 +38,11 @@ export default function ContactForm() {
     }
 
     try {
-      // const response = await axios.post(
-      //   "/.netlify/functions/send-email",
-      //   formData
-      // );
-      const response = await axios.post("/api/contact/send-email", formData);
+      const response = await axios.post(
+        "/.netlify/functions/send-email",
+        formData
+      );
+      // const response = await axios.post("/api/contact/send-email", formData);
       if (response.status === 200) {
         console.log("Email sent successfully");
         setFormData({ name: "", email: "", message: "" });
