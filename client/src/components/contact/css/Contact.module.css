@@ -1,0 +1,236 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --dark: #af5cf8;
+  --light: #d8c8ff;
+  /* --grey: #959595; */
+  --grey: #3a3a3a;
+  /* --grey: #636262; */
+}
+
+.contactWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--black);
+}
+
+.box {
+  position: relative;
+  width: 380px;
+  height: 545px;
+  background: var(--black);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 500px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, var(--dark), var(--light));
+  animation: animate 6s linear infinite;
+}
+
+.box::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, var(--dark), var(--light));
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  position: absolute;
+  inset: 2px;
+  background: #28292d;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  /* letter-spacing: 0.1em; */
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.inputBox input,
+.inputBox textarea {
+  /* position: relative; */
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background: var(--grey);
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  border: 1px var(--dark) solid;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 99;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: var(--dark);
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.75em;
+}
+
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--dark);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+  height: 44px;
+}
+
+.inputBox:focus-within label {
+  display: none;
+}
+
+/* Hide label when input has content */
+.inputBox.filled label {
+  display: none;
+}
+
+input[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 11px 25px;
+  background: var(--dark);
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100px;
+  margin-top: 10px;
+}
+
+input[type="submit"]:active {
+  opacity: 0.8;
+}
+
+.inputBox textarea {
+  /* height: auto; */
+  height: 150px;
+}
+
+.inputBox textarea:focus {
+  outline: none;
+  color: var(--white);
+}
+
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: var(--white);
+  transform: translateX(0px) translateY(-34px);
+  /* font-size: 0.75em; */
+}
+
+.inputBox textarea:valid ~ i,
+.inputBox textarea:focus ~ i {
+  height: 50px;
+}
+
+.inputBox label {
+  position: absolute;
+  /* top: -20px; */
+  top: 10px;
+  left: 10px;
+  color: var(--white);
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+button[type="submit"] {
+  border: 1px var(--dark) solid;
+  outline: none;
+  padding: 20px 25px;
+  background: var(--dark);
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 300px;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+  background-color: var(--grey);
+}
+
+.errorBox {
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  z-index: 9999;
+}
+
+.errorText {
+  color: var(--white);
+  background-color: var(--dark);
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: right;
+}
