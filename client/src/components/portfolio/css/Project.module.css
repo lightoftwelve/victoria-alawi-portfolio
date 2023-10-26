@@ -203,19 +203,19 @@
   letter-spacing: 0.1em;
 }
 
-.container .icon .sci {
+.card .textBx .sci {
   position: relative;
   display: flex;
   gap: 7px;
   margin-top: 10px;
 }
 
-.container .icon .sci li {
+.card .textBx .sci li {
   list-style: none;
 }
 
-.container .icon .sci li a,
-.container .icon .sci li a ion-icon {
+.card .textBx .sci li a,
+.card .textBx .sci li a ion-icon {
   position: relative;
   width: 30px;
   height: 30px;
@@ -228,7 +228,7 @@
   border-radius: 5px;
 }
 
-.container .icon .sci li a:hover,
-.container .icon .sci li a ion-icon:hover {
+.card .textBx .sci li a:hover,
+.card .textBx .sci li a ion-icon:hover {
   background: var(--black);
 }

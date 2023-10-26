@@ -21,15 +21,6 @@ export default function Project() {
               active={index === activeIndex}
               onMouseOver={() => setActiveIndex(index)}
             />
-            <ul className={styles.sci}>
-              {item.socialLinks.map((link, linkIndex) => (
-                <li key={`${index}-${linkIndex}`}>
-                  <a href={link.url} target="_blank" rel="noreferrer">
-                    <ion-icon name={link.icon}></ion-icon>
-                  </a>
-                </li>
-              ))}
-            </ul>
           </Fragment>
         ))}
       </div>

@@ -33,8 +33,8 @@ function ContentBox({
           <ul className={styles.sci}>
             {socialLinks.map((link, index) => (
               <li key={index}>
-                <a href={link.url} target="_blank" rel="noopener noreferrer">
-                  <i className={`icon ${link.icon}`}></i>
+                <a href={link.url} target="_blank" rel="noreferrer">
+                  <ion-icon name={link.icon}></ion-icon>
                 </a>
               </li>
             ))}
