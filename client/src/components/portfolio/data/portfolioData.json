@@ -1,0 +1,122 @@
+[
+  {
+    "image": "/astrology-api.jpg",
+    "title": "Astrology API - Birthchart Generator",
+    "subtitle": "Node.js / Express (Session & Validator) / Handlebars / Sequelize / Bcrypt / AWS S3 / AstronomyAPI / Google Maps API Loader & more...",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/astrology-api/",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://lightoftwelve-astrology-fa04aa6362c3.herokuapp.com/login",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
+    "image": "/travel-tracker.jpg",
+    "title": "TravelTracker",
+    "subtitle": "jQuery / Materialize / MapBox API / OpenWeatherMap API / DayJS",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/travel-tracker",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://lightoftwelve.github.io/travel-tracker",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
+    "image": "/its-quiz-time.png",
+    "title": "Know It or Blow It: Javascript Quiz",
+    "subtitle": "HTML / CSS / JS",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/its-quiz-time",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://lightoftwelve.github.io/its-quiz-time",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
+    "image": "/teamflow-pro.jpg",
+    "title": "TeamFlow Pro - CL Organizational Structure Management",
+    "subtitle": "Node.js / Inquirer / MySQL / Express / Prompt-Sync",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/TeamFlowPro",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://drive.google.com/file/d/1gNo7PEQs0dayV7avvi-BG1g8ni6NvmwB/view",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
+    "image": "/shopengine-ecomm-backend.jpg",
+    "title": "ShopEngine | E-Commerce Backend",
+    "subtitle": "Node.js / Sequelize / MySQL2",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/ShopEngine-ecomm-backend",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://drive.google.com/file/d/15sNWDmaryInAx1SemJFRmEZwlHhU6ulw/view",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
+    "image": "/scriptshift-pwa.png",
+    "title": "ScriptShift | PWA Text & Code Editor",
+    "subtitle": "Node.js / Webpack / HTML / CSS / JS",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/ScriptShift-PWA-text-editor",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://scriptshift-36f993584bdf.herokuapp.com/",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
+    "image": "/techconnect-social-network-platform.jpg",
+    "title": "TechConnect | Social Network Platform API",
+    "subtitle": "Node.js / MongoDB / Express / LRU Cache",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/TechConnect-social-network-platform",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://drive.google.com/file/d/1VNrbpxJhrLU1C4jDtr4rSYbST_S2zzB_/view",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
+    "image": "/AI-chatbot.png",
+    "title": "AI Coding Assistant",
+    "subtitle": "Node.js / Express / OpenAI / jQuery / Bootstrap",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/coding-assistant",
+        "icon": "logo-github"
+      },
+      {
+        "url": "https://lightoftwelve-tools-0972b77f3127.herokuapp.com/",
+        "icon": "eye-outline"
+      }
+    ]
+  }
+]
