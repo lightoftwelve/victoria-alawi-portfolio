@@ -1,0 +1,92 @@
+[
+  {
+    "type": "Front-End Development",
+    "skills": [
+      { "name": "HTML", "rating": 5 },
+      { "name": "Advanced CSS", "rating": 5 },
+      { "name": "JavaScript", "rating": 5 },
+      { "name": "React", "rating": 5 },
+      { "name": "jQuery", "rating": 5 },
+      {
+        "name": "Mapbox & Google Maps Integration (Geocoding, Directions, Elevations etc)",
+        "rating": 5
+      },
+      { "name": "TypeScript", "rating": 4 },
+      { "name": "D3.js & Chart.js", "rating": 4 },
+      { "name": "Handlebars", "rating": 3 },
+      { "name": "Figma (Wireframing)", "rating": 3 },
+      { "name": "Progressive Web App (PWA)", "rating": 3 }
+    ]
+  },
+  {
+    "type": "Back-end Development",
+    "skills": [
+      { "name": "Node.js", "rating": 5 },
+      { "name": "Express, Validator, Sessions (Cookie Creation)", "rating": 5 },
+      { "name": "Apollo/GraphQL", "rating": 5 },
+      { "name": "Writing APIs", "rating": 5 },
+      { "name": "Next.js", "rating": 4 },
+      { "name": "AWS (Lambda, S3, CloudFront)", "rating": 4 }
+    ]
+  },
+  {
+    "type": "Database & Storage",
+    "skills": [
+      { "name": "MongoDB", "rating": 5 },
+      { "name": "Mongoose", "rating": 5 },
+      { "name": "Apollo/GraphQL", "rating": 5 },
+      { "name": "PostgreSQL", "rating": 5 },
+      { "name": "MySQL", "rating": 4 },
+      { "name": "Sequelize", "rating": 4 }
+    ]
+  },
+  {
+    "type": "DevOps, Version Control & Deployment",
+    "skills": [
+      { "name": "Git / Gitlab", "rating": 5 },
+      { "name": "Heroku", "rating": 5 },
+      { "name": "Command Line (CLI)", "rating": 5 },
+      { "name": "AWS", "rating": 4 },
+      { "name": "Netlify", "rating": 4 },
+      { "name": "GoDaddy", "rating": 3 }
+    ]
+  },
+  {
+    "type": "Testing",
+    "skills": [{ "name": "Jest", "rating": 4 }]
+  },
+  {
+    "type": "Content Creation & AI",
+    "skills": [
+      { "name": "OpenAI (API building & use)", "rating": 5 },
+      { "name": "Midjourney", "rating": 5 },
+      { "name": "SEO writing", "rating": 5 },
+      { "name": "SEO optimization", "rating": 5 },
+      {
+        "name": "TikTok (Taught courses for increasing revenue using TT - multiple $10k+/mo success stories following my method)",
+        "rating": 5
+      },
+      {
+        "name": "Facebook Groups (grew (3) 25k - 60k member groups)",
+        "rating": 5
+      },
+
+      { "name": "Instagram (grew multiple 10k+ accounts)", "rating": 4 },
+      { "name": "Dall-E", "rating": 4 }
+    ]
+  },
+  {
+    "type": "UI/UX Design",
+    "skills": [{ "name": "UI/UX Design (15 years of experience)", "rating": 5 }]
+  },
+  {
+    "type": "E-commerce Platforms",
+    "skills": [
+      { "name": "Shopify", "rating": 5 },
+      { "name": "Wix", "rating": 5 },
+      { "name": "Landing Pages", "rating": 5 },
+      { "name": "Website Design", "rating": 5 },
+      { "name": "Wordpress", "rating": 4 }
+    ]
+  }
+]
