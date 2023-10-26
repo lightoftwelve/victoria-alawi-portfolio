@@ -12,7 +12,7 @@ function Download() {
         </p>
         <div className={styles.downloadButtonContainer}>
           <a
-            href="../../../public/victoria-alawi-resume.pdf"
+            href="/victoria-alawi-resume.pdf"
             download="victoria-alawi-resume.pdf"
             className={styles.downloadButton}
           >
