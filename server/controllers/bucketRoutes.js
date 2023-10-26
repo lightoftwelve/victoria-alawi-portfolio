@@ -1,3 +1,5 @@
+// Changed from express server to serverless functions to work with Netlify
+
 // const router = require("express").Router();
 // const AWS = require("aws-sdk");
 

@@ -7,6 +7,8 @@
 //   // Extract form data
 //   const { name, email, message } = req.body;
 
+// Changed from express server to serverless functions to work with Netlify
+
 //   // Configuring email sending settings
 //   const transporter = nodemailer.createTransport({
 //     service: process.env.SERVICE,
