@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Fullstack Coding Bootcamp",
+    "subtitle": "University of Toronto",
+    "dates": "2023",
+    "bullets": [
+      "JavaScript: Mastered high-level scripting language used for web development",
+      "HTML: Proficient in creating website structure",
+      "CSS: Learned styling and visual design of web pages",
+      "jQuery: Explored fast and feature-rich JavaScript library for DOM manipulation",
+      "React.js: Learned powerful JavaScript library for building user interfaces",
+      "Bootstrap & Materialize: Familiar with popular CSS frameworks for responsive web design",
+      "Node.js: Mastered runtime environment for server-side JavaScript",
+      "Express.js: Explored flexible web application framework for Node.js",
+      "Databases (MySQL and MongoDB): Gained knowledge in relational and NoSQL data storage",
+      "Web, Server, and Third-Party APIs: Worked with RESTful APIs for client-server communication; Utilized Ajax, Axios, and Fetch API for asynchronous requests",
+      "Project Manager for Project #1: Led team to first place in best project competition"
+    ]
+  },
+  {
+    "title": "The Complete JavaScript Course 2023: From Zero to Expert!",
+    "subtitle": "Udemy Inc.",
+    "dates": "2023",
+    "bullets": [
+      "Advanced JavaScript Developer: Became confident and proficient in modern JavaScript development",
+      "JavaScript Fundamentals: Mastered variables, if/else, operators, boolean logic, functions, arrays, objects, loops, strings, etc.",
+      "Modern ES6+ Features: Proficient in arrow functions, destructuring, spread operator, optional chaining (ES2020), etc.",
+      "Modern OOP Concepts: Explored classes, constructors, prototypal inheritance, encapsulation, etc.",
+      "'this' Keyword and Higher-Order Functions: In-depth knowledge on 'this' keyword, higher-order functions, closures, etc.",
+      "Asynchronous JavaScript: Learned event loop, promises, async/await, AJAX calls, and APIs",
+      "Code Architecture and Patterns: Gained proficiency in architecting code using flowcharts and common patterns",
+      "Modern Tools for 2022 and Beyond: Explored NPM, Parcel, Babel, and ES6 modules for modern development"
+    ]
+  },
+  {
+    "title": "The Ultimate React Course 2023: React, Redux & More",
+    "subtitle": "Udemy Inc.",
+    "dates": "2023",
+    "bullets": [
+      "Mastered React from Scratch",
+      "React Fundamentals: Components, JSX, Props, Events, State, Forms",
+      "State Management: Thinking about state placement, local vs. global, UI vs. remote",
+      "Single-Page Applications with React Router (including v6.4+ with data loading)",
+      "Performance Optimization: Memoization, useMemo, useCallback, and Code Splitting",
+      "Advanced React Features: useReducer, Context API, cloneElement, portals, etc.",
+      "Advanced State Management: Redux, Redux Toolkit, Thunks, React Query",
+      "Build Real-World App Features: Authentication, Sorting, Filtering, Pagination, Dark Mode, Charts, etc.",
+      "React Behind the Scenes: Virtual DOM, Reconciliation, Fiber Tree, Key Prop, etc.",
+      "Build Reusable and Composable Components",
+      "Mastered the useEffect Hook",
+      "Built Custom Hooks",
+      "Styled apps with Tailwind CSS, CSS Modules, Styled Components (CSS-in-JS)"
+    ]
+  }
+]
