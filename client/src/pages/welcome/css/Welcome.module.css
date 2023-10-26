@@ -1,0 +1,116 @@
+/* ---------------------------------------------------------
+                   Welcome Screen
+--------------------------------------------------------- */
+.welcomePageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--black);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.welcomePage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.welcomePage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(var(--black), var(--dark), var(--black));
+  animation: animate 5s linear infinite;
+  box-sizing: border-box;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.welcomeTiles {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: var(--black);
+  z-index: 2;
+  transition: background 1.5s;
+}
+
+.welcomeTiles:hover {
+  transition: background 0s;
+  background: var(--dark);
+}
+
+.welcomeTitleBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2222224f;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.welcomeTitle {
+  font-size: 100px;
+  color: var(--dark);
+  font-family: "Audiowide", cursive;
+}
+
+/* ---------------------------------------------------------
+                       media queries
+    --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .welcomeTitle {
+    font-size: 10vw;
+  }
+
+  .welcomeTiles {
+    position: relative;
+    display: block;
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+    background: #181818;
+    z-index: 2;
+    transition: background 1.5s;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcomeTiles {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
