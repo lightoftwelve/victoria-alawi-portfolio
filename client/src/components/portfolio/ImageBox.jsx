@@ -1,6 +1,17 @@
 import styles from "./css/Project.module.css";
 
-function ImageBox({ imgSrc, index, contentId, onMouseOver, active }) {
+function ImageBox({
+  imgSrc,
+  index,
+  contentId,
+  onMouseOver,
+  active,
+  openModal,
+}) {
+  const handleImageClick = () => {
+    openModal(imgSrc);
+  };
+
   return (
     <div
       className={`${styles.imgBx} ${active ? styles.active : ""}`}
@@ -8,7 +19,7 @@ function ImageBox({ imgSrc, index, contentId, onMouseOver, active }) {
       data-id={contentId}
       onMouseOver={onMouseOver}
     >
-      <img src={imgSrc} alt={contentId} />
+      <img src={imgSrc} alt="Thumbnail" onClick={handleImageClick} />
     </div>
   );
 }
