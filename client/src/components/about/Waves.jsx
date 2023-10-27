@@ -3,6 +3,7 @@ import styles from "./css/Waves.module.css";
 export default function WaveImages() {
   return (
     <div className={styles.bottom}>
+      {/* Decorative wave images - CSS animations make them appear to be moving */}
       <div className={styles.waves}>
         <div className={`${styles.wave} ${styles.wave1}`} id="wave1"></div>
         <div className={`${styles.wave} ${styles.wave2}`} id="wave2"></div>

@@ -12,12 +12,15 @@ export default function InputBox({
   onBlur = () => {},
   error,
 }) {
+  // State to keep track of whether the input is filled.
   const [filled, setFilled] = useState(false);
 
+  // Event handler for changes in the input.
   const handleInputChange = (e) => {
-    const inputValue = e.target.value;
-    setFilled(!!inputValue);
+    const inputValue = e.target.value; // Retrieving the input value from the event object.
+    setFilled(!!inputValue); // Updating the 'filled' state based on whether the input has a value.
 
+    // If an 'onChange' prop is provided and it's a function, call it.
     if (onChange && typeof onChange === "function") {
       onChange(e);
     }
@@ -33,6 +36,8 @@ export default function InputBox({
       <label htmlFor={id} className={styles.label}>
         {label}
       </label>
+
+      {/* Conditional rendering to determine whether to render a textarea or input element. */}
       {isTextArea ? (
         <textarea
           id={id}
@@ -40,6 +45,7 @@ export default function InputBox({
           required={required}
           value={value}
           onChange={handleInputChange}
+                {/* Applying styles, adding additional styles if it's a textarea. */}
           className={`${styles.input} ${isTextArea ? styles.textarea : ""}`}
           onBlur={onBlur}
         />
