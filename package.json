@@ -14,7 +14,8 @@
   "author": "Victoria Alawi | Light of Twelve | www.lightoftwelve.com",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.3.0"
+    "concurrently": "^5.3.0",
+    "netlify-lambda": "^2.0.16"
   },
   "dependencies": {
     "aws-sdk": "^2.1481.0",
