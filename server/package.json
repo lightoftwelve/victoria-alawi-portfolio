@@ -1,15 +1,35 @@
 {
   "name": "victoria-alawi-fullstack-web-developer-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This portfolio is a culmination of my work, highlighting my skills in web design and development. It provides an interactive way for potential clients or employers to view my projects, learn about my background, and get in touch with me. The user interface is designed to be intuitive, providing a seamless browsing experience.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "watch": "nodemon server.js"
   },
-  "keywords": [],
   "author": "Victoria Alawi | Light of Twelve | www.lightoftwelve.com",
+  "keywords": [
+    "react",
+    "react.js",
+    "ui-design",
+    "web-development",
+    "css3",
+    "aws-s3",
+    "portfolio-website",
+    "contact-form",
+    "web-design",
+    "nodemailer",
+    "personal-portfolio",
+    "github-portfolio",
+    "full-stack-developer",
+    "online-resume",
+    "resume-download",
+    "netlify-deployment",
+    "interactive-ui",
+    "web-developer-portfolio",
+    "project-showcase"
+  ],
   "license": "",
   "dependencies": {
     "aws-sdk": "^2.1457.0",
