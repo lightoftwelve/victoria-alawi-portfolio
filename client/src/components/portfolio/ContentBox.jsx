@@ -7,7 +7,11 @@ function ContentBox({
   title,
   subtitle,
   socialLinks,
+  openModal,
 }) {
+  const handleImageClick = () => {
+    openModal(image);
+  };
   return (
     <div
       className={`${styles.contentBx} ${isActive ? styles.active : ""}`}
@@ -15,14 +19,14 @@ function ContentBox({
     >
       <div className={styles.card}>
         <div className={styles.imgBx}>
-          <a
+          {/* <a
             className={styles.fancyBox}
             href={image}
             data-fancybox="gallery"
             data-caption={`${title} Preview`}
-          >
-            <img src={image} alt={title} />
-          </a>
+          > */}
+          <img src={image} alt={title} onClick={handleImageClick} />
+          {/* </a> */}
         </div>
         <div className={styles.textBx}>
           <h2>

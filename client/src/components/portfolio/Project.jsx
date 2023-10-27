@@ -49,6 +49,7 @@ export default function Project() {
             title={item.title}
             subtitle={item.subtitle}
             socialLinks={item.socialLinks}
+            openModal={openModal}
           />
         ))}
       </div>
