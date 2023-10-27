@@ -45,7 +45,6 @@ export default function InputBox({
           required={required}
           value={value}
           onChange={handleInputChange}
-                {/* Applying styles, adding additional styles if it's a textarea. */}
           className={`${styles.input} ${isTextArea ? styles.textarea : ""}`}
           onBlur={onBlur}
         />
