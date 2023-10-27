@@ -60,6 +60,7 @@ export default function InputBox({
           onBlur={onBlur}
         />
       )}
+      {/* Conditional rendering to display an error message if there is an error. */}
       {error && (
         <div className={styles.errorBox}>
           <div className={styles.errorText}>Required Field</div>
