@@ -19,11 +19,8 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
-      { index: true, element: <About /> },
-      { path: "/welcome", element: <Welcome /> },
-      // welcome page will be default after grading
-      // { index: true, element: <Welcome /> },
-      // { path: "/about", element: <About /> },
+      { index: true, element: <Welcome /> },
+      { path: "/about", element: <About /> },
       { path: "/resume", element: <Resume /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/contact", element: <Contact /> },

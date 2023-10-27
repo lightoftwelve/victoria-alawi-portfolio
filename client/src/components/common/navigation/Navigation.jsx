@@ -1,6 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import NavIntro from "./NavProfileCard";
 
 export default function Navigation() {
   const [activePage, setActivePage] = useState("/");
@@ -16,35 +15,8 @@ export default function Navigation() {
 
   return (
     <div className="navLinks">
-      <NavIntro />
-
       <ul className="navBar">
         <li
-          className={
-            currentPage === "/welcome" ? "navPages active" : "navPages"
-          }
-          onMouseOver={() => handleHover("/welcome")}
-        >
-          <Link to="/welcome">
-            <span className="navIcon">
-              <ion-icon name="person-outline"></ion-icon>
-            </span>
-            <span className="navTitle">Welcome</span>
-          </Link>
-        </li>
-        <li
-          className={currentPage === "/" ? "navPages active" : "navPages"}
-          onMouseOver={() => handleHover("/")}
-        >
-          <Link to="/">
-            <span className="navIcon">
-              <ion-icon name="home-outline"></ion-icon>
-            </span>
-            <span className="navTitle">About Me</span>
-          </Link>
-        </li>
-        {/* Will be switching back to this after grading*/}
-        {/* <li
           className={currentPage === "/" ? "navPages active" : "navPages"}
           onMouseOver={() => handleHover("/")}
         >
@@ -54,8 +26,8 @@ export default function Navigation() {
             </span>
             <span className="navTitle">Home</span>
           </Link>
-        </li> */}
-        {/* <li
+        </li>
+        <li
           className={currentPage === "/about" ? "navPages active" : "navPages"}
           onMouseOver={() => handleHover("/about")}
         >
@@ -65,7 +37,7 @@ export default function Navigation() {
             </span>
             <span className="navTitle">About Me</span>
           </Link>
-        </li> */}
+        </li>
         <li
           className={currentPage === "/resume" ? "navPages active" : "navPages"}
           onMouseOver={() => handleHover("/resume")}
