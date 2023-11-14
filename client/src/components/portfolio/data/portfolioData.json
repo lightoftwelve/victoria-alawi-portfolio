@@ -15,6 +15,21 @@
     ]
   },
   {
+    "image": "/write-away-ai-article-writer-screenshot-4.png",
+    "title": "AI Article Writer",
+    "subtitle": "MERN-G Stack / AWS S3 / Cron / Editor.js / JWT / Stripe / IndexedDB",
+    "socialLinks": [
+      {
+        "url": "https://github.com/lightoftwelve/ai-content-generator",
+        "icon": "eye-off-outline"
+      },
+      {
+        "url": "https://writeaway-ai-1d0d4bee3d2b.herokuapp.com/",
+        "icon": "eye-outline"
+      }
+    ]
+  },
+  {
     "image": "/travel-tracker.jpg",
     "title": "TravelTracker",
     "subtitle": "jQuery / Materialize / MapBox API / OpenWeatherMap API / DayJS",
@@ -100,21 +115,6 @@
       },
       {
         "url": "https://drive.google.com/file/d/1VNrbpxJhrLU1C4jDtr4rSYbST_S2zzB_/view",
-        "icon": "eye-outline"
-      }
-    ]
-  },
-  {
-    "image": "/AI-chatbot.png",
-    "title": "AI Coding Assistant",
-    "subtitle": "Node.js / Express / OpenAI / jQuery / Bootstrap",
-    "socialLinks": [
-      {
-        "url": "https://github.com/lightoftwelve/coding-assistant",
-        "icon": "logo-github"
-      },
-      {
-        "url": "https://lightoftwelve-tools-0972b77f3127.herokuapp.com/",
         "icon": "eye-outline"
       }
     ]
